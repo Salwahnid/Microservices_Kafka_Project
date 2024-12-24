@@ -1,0 +1,14 @@
+type Order {
+    id: ID!
+    productId: ID!
+    quantity: Int!
+    totalPrice: Float!
+}
+
+type Query {
+    getAllOrders: [Order!]
+}
+
+type Mutation {
+    placeOrder(productId: ID!, quantity: Int!): Order
+}

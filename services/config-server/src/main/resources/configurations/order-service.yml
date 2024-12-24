@@ -1,0 +1,17 @@
+server:
+  port: 8040
+spring:
+  data:
+    mongodb:
+      username: examdb
+      password: examdb
+      host: localhost
+      port: 27018
+      database: order
+      authentication-database: admin
+
+
+application:
+  config:
+    user-url: http://localhost:8222/api/v1/users
+    product-url: http://localhost:8222/api/v1/product
